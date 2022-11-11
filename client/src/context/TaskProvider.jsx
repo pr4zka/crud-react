@@ -37,7 +37,6 @@ export const TaskContextProvider = ({ children }) => {
   const createTask = async (task) => {
     try {
       await createTaskRequest(task);
-      // setTasks([...tasks, response.data]);
     } catch (error) {
       console.error(error);
     }
